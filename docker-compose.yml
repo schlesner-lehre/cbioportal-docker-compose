@@ -48,7 +48,6 @@ services:
     networks:
       - cbio-net
   cbioportal-session-database:
-    platform: linux/amd64
     restart: unless-stopped
     image: mongo:3.7.9
     container_name: cbioportal-session-database-container
